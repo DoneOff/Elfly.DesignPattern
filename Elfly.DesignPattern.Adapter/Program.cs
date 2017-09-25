@@ -11,16 +11,39 @@ namespace Elfly.DesignPattern.Adapter
     {
         static void Main(string[] args)
         {
+            //直接执行，需要依赖于具体的适配器
+            Invoke();
+
+            //通过反射执行，不依赖于具体的适配器
+            ReflecInvoke();
+            Console.ReadLine();
+        }
+
+        public static void Invoke()
+        {
             Adaptee adaptee = new Adaptee();
             Target target = new Adapter(adaptee);
-
             //调用Say Hello
             target.SayHello();
-
             //调用Say GoodBye
             target.SayGoodBye();
+        }
 
-            Console.ReadLine();
+        public static void ReflecInvoke()
+        {
+            //可通过配置获取类型全名
+            Type type = Type.GetType("Elfly.DesignPattern.Adapter.Adapter");
+
+            if (type != null)
+            {
+                Target target = (Target)Activator.CreateInstance(type, true);
+
+                //调用Say Hello
+                target.SayHello();
+
+                //调用Say GoodBye
+                target.SayGoodBye();
+            }
         }
     }
 }

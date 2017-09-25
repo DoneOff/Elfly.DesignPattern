@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace Elfly.DesignPattern.Adapter
 {
-    public class Adapter:Target
+    /// <summary>
+    /// 适配器，通过适配器实现调用
+    /// </summary>
+    public class Adapter : Target
     {
-        private Adaptee _adaptee;
+        private readonly Adaptee _adaptee;
+
+        public Adapter()
+        {
+            if (_adaptee == null)
+                _adaptee = new Adaptee();
+        }
 
         public Adapter(Adaptee adaptee)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Elfly.DesignPattern.Adapter
 {
     /// <summary>
-    /// 需要适配的类
+    /// 需要适配的类，此类型业务场景一般是后期增加的。
     /// </summary>
     public class Adaptee
     {
