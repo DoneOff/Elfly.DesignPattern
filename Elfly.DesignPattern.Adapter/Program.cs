@@ -16,13 +16,17 @@ namespace Elfly.DesignPattern.Adapter
 
             //通过反射执行，不依赖于具体的适配器
             ReflecInvoke();
+
             Console.ReadLine();
         }
 
         public static void Invoke()
         {
+            //可以通过新增适配器类，进行扩展
             Adaptee adaptee = new Adaptee();
+            //目标类
             Target target = new Adapter(adaptee);
+
             //调用Say Hello
             target.SayHello();
             //调用Say GoodBye
