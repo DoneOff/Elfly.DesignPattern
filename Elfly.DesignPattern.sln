@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elfly.DesignPattern", "Elfl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elfly.DesignPattern.Adapter", "Elfly.DesignPattern.Adapter\Elfly.DesignPattern.Adapter.csproj", "{007D6362-2DAB-4D63-9A86-A467BDD2D8DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elfly.DesignPattern.Factory", "Elfly.DesignPattern.Factory\Elfly.DesignPattern.Factory.csproj", "{D35F73E5-899B-4A79-B889-76620012772E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{007D6362-2DAB-4D63-9A86-A467BDD2D8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{007D6362-2DAB-4D63-9A86-A467BDD2D8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{007D6362-2DAB-4D63-9A86-A467BDD2D8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35F73E5-899B-4A79-B889-76620012772E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35F73E5-899B-4A79-B889-76620012772E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35F73E5-899B-4A79-B889-76620012772E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35F73E5-899B-4A79-B889-76620012772E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
